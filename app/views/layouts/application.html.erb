@@ -45,6 +45,7 @@
       <%= simple_form_for Quote.new do |f| %>
       	<div class="modal-body">
 			<%= f.input :saying, label: 'What is the saying you want to add?', placeholder: "Fear is the disease. Hustle is the antidote." %>
+			<br />
 			<%= f.input :author, label: 'Who is the author of this quote?', placeholder: 'Tavis Kalanick' %>
 		</div>
 		<div class="modal-footer">
@@ -75,8 +76,8 @@
 			<%= link_to "This isn't enough, show me another quote", root_path, :class => 'next-quote' %>
 		</div>
 		<div class="col-xs-12 col-sm-6 footer-blurb">
-			Proudly hacked in Richmond, VA by <a href="http://github.com/adkoge">Alan</a><br />
-			Want to build your own Splurty Web App - <a href="http://thefirehoseproject.com">Learn how to code here</a>
+			Proudly hacked in Richmond, VA by <a target="_blank" href="http://github.com/adkoge">Alan</a><br />
+			Want to build your own Splurty Web App - <a target="_blank" href="http://thefirehoseproject.com">Learn how to code here</a>
 		</div>
 	</div>
 
