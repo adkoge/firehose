@@ -16,6 +16,10 @@ class QuotesController < ApplicationController
 		redirect_to root_path
 	end
 
+	def destroy
+		Order.destroy(params[:id])
+	end
+
 	private
 
 	def quote_params
